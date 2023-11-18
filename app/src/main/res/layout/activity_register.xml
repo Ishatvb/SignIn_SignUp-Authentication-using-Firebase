@@ -71,7 +71,54 @@
 
                 </LinearLayout>
 
+                <LinearLayout
+                    android:id="@+id/LinearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="11dp"
+                        android:fontFamily="@font/quicksandboldregular"
+                        android:text="Email"
+                        android:textColor="#000"
+                        android:textFontWeight="700"
+                        android:textSize="18dp"
+                        android:textStyle="normal">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Enter your email"
+                        android:textColor="#ADADAD"
+                        android:textFontWeight="400"
+                        android:textSize="15dp"
+                        android:textStyle="normal" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="5dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/line" />
+
+                </LinearLayout>
+
                 
+
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
