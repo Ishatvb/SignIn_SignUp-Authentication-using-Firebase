@@ -279,7 +279,25 @@
                     app:srcCompat="@drawable/github" />
 
             </LinearLayout>
-            
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/imageView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:padding="1dp"
+                    app:srcCompat="@drawable/instagram" />
+            </LinearLayout>
         </LinearLayout>
 
 
