@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -33,7 +33,7 @@
                 android:id="@+id/textView1"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/quicksandboldregular"
-                android:text="Email"
+                android:text="Email *"
                 android:textColor="#000"
                 android:textFontWeight="700"
                 android:textSize="18dp"
@@ -43,27 +43,28 @@
 
             </TextView>
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
+            <EditText
+                android:id="@+id/textView4"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:letterSpacing="0.02"
                 android:text="Enter your email"
                 android:textColor="#ADADAD"
                 android:textFontWeight="400"
                 android:textSize="15dp"
-                android:textStyle="normal"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"/>
+                android:textStyle="normal" />
 
-            <ImageView
-                android:id="@+id/imageView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/line"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="5dp"/>
+<!--            <ImageView-->
+<!--                android:id="@+id/login_button"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:srcCompat="@drawable/line"-->
+<!--                android:layout_marginStart="20dp"-->
+<!--                android:layout_marginTop="5dp"/>-->
 
         </LinearLayout>
 
@@ -79,7 +80,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/textView3"
                 android:fontFamily="@font/quicksandboldregular"
-                android:text="Password"
+                android:text="Password *"
                 android:textColor="#000"
                 android:textFontWeight="700"
                 android:textSize="18dp"
@@ -94,30 +95,30 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="wrap_content"
+                <EditText
+                    android:id="@+id/textView8"
+                    android:layout_width="300dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
+                    android:layout_marginStart="16dp"
                     android:layout_marginTop="20dp"
                     android:text="Enter your password"
                     android:textColor="#ADADAD"
+                    android:letterSpacing="0.02"
                     android:textFontWeight="400"
                     android:textSize="15dp"
                     android:textStyle="normal" />
 
                 <ImageView
-                    android:id="@+id/imageView3"
+                    android:id="@+id/imageView_eye_close"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="160dp"
                     android:layout_marginTop="20dp"
                     app:srcCompat="@drawable/ec" />
 
             </LinearLayout>
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/register_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -167,7 +168,7 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/imageView4"
+                android:id="@+id/imageView_login_button"
                 android:layout_width="320dp"
                 android:layout_height="55dp"
                 android:layout_marginStart="20dp"
@@ -231,7 +232,7 @@
                 android:padding="10dp">
 
                 <ImageView
-                    android:id="@+id/imageView14"
+                    android:id="@+id/imageView_facebook"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -249,7 +250,7 @@
                 android:padding="5dp">
 
                 <ImageView
-                    android:id="@+id/imageView15"
+                    android:id="@+id/imageView_gmail"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -268,7 +269,7 @@
                 android:padding="8dp">
 
                 <ImageView
-                    android:id="@+id/imageView16"
+                    android:id="@+id/imageView_github"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="6dp"
@@ -288,7 +289,7 @@
                 android:layout_weight="1">
 
                 <ImageView
-                    android:id="@+id/imageView17"
+                    android:id="@+id/imageView_insta"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
@@ -299,26 +300,6 @@
                     app:srcCompat="@drawable/instagram" />
             </LinearLayout>
         </LinearLayout>
-
-
     </LinearLayout>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
