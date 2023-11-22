@@ -7,7 +7,7 @@
     android:background="@drawable/splash"
     tools:context=".SplashScreen">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="433dp"
         android:id="@+id/LinearLayout_s1"
@@ -15,16 +15,16 @@
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="383dp"
+            android:layout_width="match_parent"
             android:layout_height="470dp"
             android:src='@drawable/p3'
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints" />
 
-    </LinearLayout>
+    </RelativeLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="433dp"
         android:id="@+id/LinearLayout_s2"
@@ -33,30 +33,27 @@
 
 
         <ImageView
-            android:id="@+id/login_button"
+            android:id="@+id/login_button_splash"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="28dp"
             android:layout_marginTop="40dp"
             android:layout_marginEnd="28dp"
+            android:layout_centerHorizontal="true"
             android:clickable="true"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView3"
             app:srcCompat="@drawable/login_button" />
 
         <ImageView
-            android:id="@+id/register_button"
+            android:id="@+id/register_button_splash"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginStart="28dp"
+            android:layout_centerHorizontal="true"
             android:layout_marginEnd="28dp"
             android:clickable="true"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/login_button"
+            android:layout_below="@id/login_button_splash"
             app:srcCompat="@drawable/register_button" />
 
-    </LinearLayout>
+    </RelativeLayout>
 </RelativeLayout>

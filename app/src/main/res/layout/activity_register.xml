@@ -6,20 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".RegisterActivity">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="@drawable/register">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="496dp"
             android:orientation="vertical"
-            android:layout_marginTop="235dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+            android:layout_marginTop="235dp">
 
             <ScrollView
                 android:layout_width="match_parent"
@@ -32,7 +29,6 @@
                     android:layout_marginRight="15dp"
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="1dp"
-                    android:background="@color/white"
                     android:padding="15dp">
 
 
@@ -379,8 +375,8 @@
                 </RelativeLayout>
 
             </ScrollView>
-        </LinearLayout>
+        </RelativeLayout>
 
-    </LinearLayout>
+    </RelativeLayout>
 
 </RelativeLayout>

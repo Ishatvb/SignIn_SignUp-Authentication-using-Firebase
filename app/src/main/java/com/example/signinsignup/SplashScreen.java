@@ -18,7 +18,7 @@ public class SplashScreen extends AppCompatActivity {
 //        getSupportActionBar().setTitle("SignUp SignIn App");
 //
         // Open Login Activity
-        ImageView login_button = findViewById(R.id.login_button);
+        ImageView login_button = findViewById(R.id.login_button_splash);
 
         login_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,7 +29,7 @@ public class SplashScreen extends AppCompatActivity {
         });
 
         // Open Register Activity
-        ImageView register_button = findViewById(R.id.register_button);
+        ImageView register_button = findViewById(R.id.register_button_splash);
 
         register_button.setOnClickListener(new View.OnClickListener() {
             @Override
