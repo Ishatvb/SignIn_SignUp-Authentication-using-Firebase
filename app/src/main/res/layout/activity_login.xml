@@ -62,7 +62,7 @@
                             android:background="@android:color/darker_gray" />
 
                         <EditText
-                            android:id="@+id/editText_register_email"
+                            android:id="@+id/editText_login_email"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/textView_login_email"
@@ -91,7 +91,7 @@
 
 
                         <TextView
-                            android:id="@+id/textView_register_confirm_password"
+                            android:id="@+id/textView_login_password"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textSize="18dp"
@@ -104,16 +104,16 @@
                             android:id="@+id/divider_pwd"
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
-                            android:layout_below="@id/textView_register_confirm_password"
+                            android:layout_below="@id/textView_login_password"
                             android:layout_centerHorizontal="true"
                             android:background="@android:color/darker_gray" />
 
 
                         <EditText
-                            android:id="@+id/editText_register_password"
+                            android:id="@+id/editText_login_password"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_below="@id/textView_register_confirm_password"
+                            android:layout_below="@id/textView_login_password"
                             android:layout_marginTop="5dp"
                             android:layout_marginBottom="10dp"
                             android:background="@android:color/transparent"
@@ -126,14 +126,14 @@
 
                         <ImageView
                             android:id="@+id/imageView_show_hide_pwd"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/textView_register_confirm_password"
-                            android:layout_alignLeft="@id/editText_register_password"
-                            android:layout_marginLeft="250dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_below="@+id/textView_login_password"
+                            android:layout_alignLeft="@id/editText_login_password"
+                            android:layout_marginLeft="240dp"
                             android:layout_marginTop="25dp"
                             android:layout_marginBottom="10dp"
-                            app:srcCompat="@drawable/ec" />
+                            app:srcCompat="@drawable/hide_password" />
 
 
 
@@ -211,7 +211,7 @@
 
 
                         <TextView
-                            android:id="@+id/textView_login_here"
+                            android:id="@+id/textView_register_here"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -229,6 +229,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/RL_or"
+                        android:layout_centerHorizontal="true"
                         android:layout_below="@id/RL_login"
                         android:layout_marginTop="50dp"
                         android:orientation="vertical">
@@ -282,17 +283,6 @@
                         </RelativeLayout>
 
                     </RelativeLayout>
-
-
-
-
-
-
-
-
-
-
-
 
                     <ProgressBar
                         android:id="@+id/progressBar"

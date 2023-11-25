@@ -13,14 +13,20 @@
         android:theme="@style/Theme.SignInSignUp"
         tools:targetApi="31">
         <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".UserProfile"
             android:exported="false" />
         <activity
             android:name=".RegisterActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".LoginActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".SplashScreen"
             android:exported="true">

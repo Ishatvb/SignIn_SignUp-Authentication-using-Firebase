@@ -6,5 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".RegisterActivity">
 
+    <FrameLayout
+        android:id="@+id/container_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?attr/actionBarSize">
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        app:menu="@menu/nav_items"
+        android:layout_alignParentBottom="true" />
 
 </RelativeLayout>
